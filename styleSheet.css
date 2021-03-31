@@ -1,0 +1,63 @@
+   
+    li {
+        float: left;
+      }
+      a {
+        display: block;
+        padding: 8px;
+        background-color: lightgoldenrodyellow;
+      }
+    
+    h1 {
+        font-family: cursive;
+        font-weight: bolder;
+        font-size: 40px;
+        color: red;
+    }
+
+    h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+        font-size: 20px;
+        
+    }
+
+    h3, h4, h5, h6 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+        font-size: 20px;
+    }     
+
+    p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16x;
+    }
+     
+    a:hover {
+        text-decoration: underline;
+    }
+    
+    /*Classes */
+    .biophoto {
+
+    }
+
+
+    a:link {
+        text-decoration: none;
+        color: red;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }  
+    
+    /* Position Element */
+    .sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        padding: 20px;
+        background-color: #dddddd;
+        border: 2px solid red;
+    }
