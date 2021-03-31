@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Resume - Jennifer Weaver</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- PHP / SQL-->
+        <!-- ?php
+        //Replace ALL the things!
+            $hostname = 'localhost';
+            $database = 'testdb';
+            $username = 'root';
+            $password = 'root';
+            $dbh = new PDO('mysql:host=' . $hostname . ';dbname=' . $database, $username, $password);
+        ?>
+
+        function get_db_connection(){
+            $servername = "librarysquare20.slccwebdev.com";
+            $db_name = "librarysquare20";
+            $username = "librarysquare20";
+            $password = "librarysquare2020";
+            try{
+                $conn = new PDO("mysql:host=$servername;dbname=$db_name", $username, $password);
+                // set the PDO error mode to exception
+                $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                echo "Connected successfully";
+            } catch(PDOException $e){
+                echo "Connection failed: " . $e->getMessage();
+            }
+            return $conn;
+        }
+        >
+        <! -- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Jennifer Weaver</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/jw.jpg" alt="" /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        Jennifer
+                        <span class="text-primary">Weaver</span>
+                    </h1>
+                    <div class="subheading mb-5">
+                        10533 S. Sage Flats Way · South Jordan, UT 84009 · (385) 329-3558 ·
+                        <a href="mailto:jnnfrwvr@yahoo.com">jnnfrwvr@yahoo.com</a>
+                    </div>
+                    <p class="lead mb-5">I have been in communications/PR and print/TV management for more than 25 years.
+                        I am an award-winning journalist with advertising sales and digital marketing experience.
+                        I have experience with TV news management, corporate communications, public relations, social
+                        media/email marketing and website administration.</p>
+                        <form action="/doc/Jennifer_Weaver_Resume.pdf">
+                            <button type="submit">Download Jennifer's Resume</button>
+                         </form>
+                        <br>
+                    <div class="social-icons">
+                        <a class="social-icon" href="https://www.linkedin.com/in/jennifer-weaver-mpa-568783117/"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="https://www.instagram.com/jnnfrwvr/"><i class="fab fa-instagram"></i></a>
+                        <a class="social-icon" href="https://twitter.com/jensquirrely"><i class="fab fa-twitter"></i></a>
+                        <a class="social-icon" href="https://www.facebook.com/jeweaver"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Experience-->
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Experience</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Executive Producer of Digital News</h3>
+                            <div class="subheading mb-3">KUTV 2News</div>
+                            <p>Develop and implement digital content strategy for KUTV.com. Work with others in the West Region stations in Sinclair Broadcast Group. Manage a staff of six and work closely with assignment desk, producers, reporters and photographers. Make sure KUTV broadcast and digital staff are working together to increase ratings and digital/mobile/social stats. Copy edit and write stories for online and produce Amazon Alexa. Administer all website, social media platforms and news alert emails.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">November 2017 - Present</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Communications and Marketing Manager</h3>
+                            <div class="subheading mb-3">ForeverGreen Int'l</div>
+                            <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">May 2017 - November 2017</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Communications and Marketing Manager</h3>
+                            <div class="subheading mb-3">Blendfresh</div>
+                            <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">March 2016 - April 2017</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Associate Manager Corporateo Communications</h3>
+                            <div class="subheading mb-3">Nu Skin Enterprises,LLC.</div>
+                            <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">May 2014 - January 2016</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Assignment Manager</h3>
+                            <div class="subheading mb-3">KSTU Fox13</div>
+                            <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">November 2011 - April 2014</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Bureau Chief</h3>
+                            <div class="subheading mb-3">The Spectrum & Daily News</div>
+                            <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">October 2001 - November 2011</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Education-->
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Education</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">University of Phoenix</h3>
+                            <div class="subheading mb-3">Masters in Public Administration</div>
+                            <div>Management - Lambda Sigma Chapter of the International Business Honor Society, Delta Mu Delta</div>
+                            <p>GPA: 3.76</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Sept. 2009 - October 2011</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">University of Utah</h3>
+                            <div class="subheading mb-3">Bachelors of Science</div>
+                            <p>Human Development & Family Studies</p>
+                            <p>Transfer Student Leadership Scholarship</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">September 1990 - June 1997</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Salt Lake Community College</h3>
+                            <div class="subheading mb-3">General Education</div>
+                            <p>Leadership Scholarship</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">September 1988 - March 1990</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Skills-->
+            <section class="resume-section" id="skills">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Skills</h2>
+                    <div class="subheading mb-3">Web Developement Languages</div>
+                    <ul class="list-inline dev-icons">
+                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
+                    </ul>
+                    <div class="subheading mb-3">Specialities</div>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            AP Style / Writing / Editing
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Adobe Creative Suite / MS Word / Excel / Powerpoint / Google Docs
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Social Media Management / SEO / Email Marketing
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Event Planning / Volunteer Coordination
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Interests-->
+            <section class="resume-section" id="interests">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Interests</h2>
+                    <p>Apart from being a writer, I enjoy being a mom. I also like to workout at Orange Theory Fitness and walking trails.</p>
+                    <p class="mb-0">I like documentaries, rom-coms and dramas. I also enjoy volunteering and advocacy.</p>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Awards-->
+            <section class="resume-section" id="awards">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Awards & Certifications</h2>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Edward R.Murrow Awards Judge for Multi-media Excellence & Social Media - 2019-2020
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Don Baker Award for Investigative Reporting 
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            AP Best Editorial of the Year                      
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            1
+                            <sup>st</sup>
+                            Place - Breaking News - Associated Press: Utah-Spokane-Washington 
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            1
+                            <sup>st</sup>
+                            Place - SPJ Awards - Spot News
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            1
+                            <sup>st</sup>
+                            Place - SPJ Awards - Personality Profile
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            1
+                            <sup>st</sup>
+                            Place - SPJ Awards - Features Reporting
+                        </li>
+                    </ul>
+                </div>
+                <form action="/doc/Jennifer_Weaver_Resume.pdf">
+                    <button type="submit">Download Jennifer's Resume</button>
+                 </form>
+            </section>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
