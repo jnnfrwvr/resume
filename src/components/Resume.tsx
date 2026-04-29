@@ -380,7 +380,40 @@ const Resume = () => {
           </div>
         </section>
 
-        {/* Footer */}
+        <div className="rule mt-20" />
+
+        {/* Boards & Committees */}
+        <section className="mt-20 grid gap-10 md:grid-cols-12">
+          <div className="md:col-span-4">
+            <p className="eyebrow">Section 05</p>
+            <h3 className="display mt-3 text-3xl font-normal">
+              Boards <span className="italic">&</span>
+              <br />
+              Committees
+            </h3>
+          </div>
+          <div className="md:col-span-8">
+            <ul className="space-y-4">
+              {boards.map((b, i) => (
+                <li
+                  key={`${b.org}-${b.role}`}
+                  className="flex flex-wrap items-baseline justify-between gap-3 border-b border-foreground/10 pb-4"
+                >
+                  <div className="flex items-baseline gap-4">
+                    <span className="display text-2xl font-light text-foreground/25">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <div>
+                      <p className="display text-lg leading-tight">{b.org}</p>
+                      <p className="text-sm italic text-accent">{b.role}</p>
+                    </div>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+
         <footer className="mt-24 flex flex-wrap items-center justify-between gap-4 border-t border-foreground/15 pt-8 text-xs text-muted-foreground">
           <p>© {new Date().getFullYear()} Jennifer K. Weaver</p>
           <p className="italic">Last updated 2026</p>
