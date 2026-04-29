@@ -1,4 +1,12 @@
 import { Mail, Phone, MapPin, Linkedin, Printer, ArrowUpRight } from "lucide-react";
+import portrait from "@/assets/jennifer-weaver.jpg";
+
+const boards = [
+  { org: "Promise2Live.org", role: "Board Member" },
+  { org: "Utah Women's Leadership Project", role: "Public Relations Committee" },
+  { org: "Utah State Bar", role: "AI Committee" },
+  { org: "Utah State Bar", role: "Innovation in Law Practice Committee" },
+];
 
 const competencies = [
   "Strategic & Crisis Communications",
@@ -160,12 +168,27 @@ const Resume = () => {
       <article className="mx-auto max-w-4xl px-6 py-16 sm:px-10 sm:py-24">
         {/* Header */}
         <header className="relative">
-          <p className="eyebrow mb-6">Curriculum Vitæ — 2025</p>
-          <h1 className="display text-5xl font-light leading-[0.95] sm:text-7xl md:text-8xl">
-            Jennifer K.
-            <br />
-            <span className="italic font-normal">Weaver</span>
-          </h1>
+          <div className="grid items-end gap-10 md:grid-cols-12">
+            <div className="md:col-span-8">
+              <p className="eyebrow mb-6">Curriculum Vitæ — 2026</p>
+              <h1 className="display text-5xl font-light leading-[0.95] sm:text-7xl md:text-8xl">
+                Jennifer K.
+                <br />
+                <span className="italic font-normal">Weaver</span>
+              </h1>
+            </div>
+            <div className="md:col-span-4">
+              <div className="relative mx-auto aspect-[4/5] w-48 overflow-hidden rounded-sm shadow-[var(--shadow-page)] sm:w-56 md:w-full md:max-w-[220px]">
+                <img
+                  src={portrait}
+                  alt="Portrait of Jennifer K. Weaver"
+                  className="h-full w-full object-cover"
+                  loading="eager"
+                />
+                <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-foreground/10" />
+              </div>
+            </div>
+          </div>
 
           <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-3 text-sm text-muted-foreground">
             <span className="inline-flex items-center gap-2">
@@ -360,7 +383,7 @@ const Resume = () => {
         {/* Footer */}
         <footer className="mt-24 flex flex-wrap items-center justify-between gap-4 border-t border-foreground/15 pt-8 text-xs text-muted-foreground">
           <p>© {new Date().getFullYear()} Jennifer K. Weaver</p>
-          <p className="italic">Last updated 2025</p>
+          <p className="italic">Last updated 2026</p>
         </footer>
       </article>
     </main>
